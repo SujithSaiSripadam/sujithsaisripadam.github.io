@@ -107,3 +107,23 @@ table tr:nth-child(even) {
   padding-left: 18px;
   margin-top: 4px;
 }
+
+.references a {
+  color: grey;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.references a:hover {
+  color: darkgrey;
+  text-decoration: underline;
+}
+
+blockquote {
+  background-color: #f0f0f0; /* light grey */
+  padding: 3px 5px;
+  border-left: 4px solid #ccc; /* optional, for that classic quote bar */
+  color: #555; /* slightly dim text */
+  margin: 1em 0;
+  border-radius: 4px; /* optional for rounded corners */
+}
