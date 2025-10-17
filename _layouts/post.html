@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <title>{{ page.title }} | {{ site.title }}</title>
-  <link rel="stylesheet" href="/style_blog.css" />
+  {%- comment -%} Use relative_url so path works with or without baseurl on GitHub Pages {%- endcomment -%}
+  <link rel="stylesheet" href="{{ '/style_blog.css' | relative_url }}" />
+  {%- comment -%} Many Jekyll themes output an assets/main.css; keep as fallback {%- endcomment -%}
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}" />
 
   <!-- MathJax Configuration (MUST come before loading script) -->
   <script>
