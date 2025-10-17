@@ -1,0 +1,73 @@
+---
+layout: default
+title: Blog Posts
+permalink: /posts/
+---
+
+<link rel="stylesheet" href="/blog_page.css" />
+
+<div class="dark-toggle">
+  <label>
+    <input type="checkbox" id="dark-mode-toggle">
+    Dark Mode
+  </label>
+</div>
+
+<div class="container">
+  <h1>{{ page.title }}</h1>
+
+  <div class="search-container">
+    <input type="text" id="search-posts" placeholder="Search posts..." />
+  </div>
+
+  <ul class="post-list" id="post-list">
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <small>{{ post.date | date: "%B %-d, %Y" }}</small>
+        <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <nav class="blog-nav">
+    <a href="/posts/archive.html">Archive</a>
+    <a href="/posts/tags.html">Tags</a>
+    <a href="/posts/search.html">Search</a>
+    <a href="/">Home</a>
+  </nav>
+
+  <p class="back-link"><a href="/">Back to Home</a></p>
+</div>
+
+<script>
+  const searchInput = document.getElementById('search-posts');
+  const postList = document.getElementById('post-list');
+  const posts = Array.from(postList.getElementsByTagName('li'));
+
+  searchInput.addEventListener('input', () => {
+    const query = searchInput.value.toLowerCase();
+    posts.forEach(post => {
+      const title = post.querySelector('a').textContent.toLowerCase();
+      const excerpt = post.querySelector('.post-excerpt').textContent.toLowerCase();
+      post.style.display = title.includes(query) || excerpt.includes(query) ? '' : 'none';
+    });
+  });
+</script>
+
+<script>
+  const toggle = document.getElementById('dark-mode-toggle');
+  const isDark = localStorage.getItem('dark-mode') === 'true';
+
+  if (isDark) {
+    document.body.classList.add('dark');
+    toggle.checked = true;
+  }
+
+  toggle.addEventListener('change', () => {
+    document.body.classList.toggle('dark');
+    localStorage.setItem('dark-mode', document.body.classList.contains('dark'));
+  });
+</script>
+
+

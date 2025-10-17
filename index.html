@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,15 +6,62 @@
   <title>Sripadam Sujith Sai</title>
   <meta name="author" content="Sripadam Sujith Sai">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+<!-- MathJax Configuration -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      tags: 'ams'
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+    }
+  };
+</script>
+
+<!-- Load MathJax v3 -->
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;margin:auto;border:0;border-spacing:0px;border-collapse:separate;">
+
+
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">Sripadam Sujith Sai</div>
+    <div class="nav-toggle" id="nav-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="./posts/index.html">Posts</a></li>
+      <li><a href="pdfs/SSujithSai.pdf" target="_blank">CV</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div style="width:100%;max-width:85vw;margin:auto;padding:0;">
+  <table style="width:100%;max-width:85vw;margin:auto;border:0;border-spacing:0px;border-collapse:separate;">
     <tr>
-      <td style="padding:2.5%;width:90%;vertical-align:middle">
-        <p class="name" style="text-align: center; font-size: 28px; font-weight: bold;">
+      <td style="padding:2.5%;width:100%;vertical-align:middle;">
+        <p class="name" style="text-align: center; font-size: 38px; font-weight: bold; transform: translateX(15%);">
           Sripadam Sujith Sai
         </p>
         <p>
@@ -21,7 +69,7 @@
         </p> 
 
         <p>
-          My research interests are in computer vision, deep learning, and human–robot interaction.
+          My research interests lie at the intersection of AI+Science and Geometric deep learning, with practical experience in computer vision, deep learning, and human–robot interaction fields I am equally passionate about.
         </p>
         <p>
           I’ve had the opportunity to work with:
@@ -47,92 +95,144 @@
           Outside research, I enjoy playing badminton and brainstorming on creative technology applications (a few ideas are born from this).
         </p>
         <p style="text-align:center">
-          <a href="mailto:ssujith.sai04@gmail.com">Email</a> &nbsp;/&nbsp;
-          <a href="pdfs/SSujithSai.pdf">CV</a> &nbsp;/&nbsp;
-          <a href="#">Google Scholar</a>
+          <a href="mailto:ssujith.sai04@gmail.com">
+            <i class="fas fa-envelope"></i> Email
+          </a> &nbsp;/&nbsp;
+          <a href="pdfs/SSujithSai.pdf" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-file-pdf"></i> CV
+          </a> &nbsp;/&nbsp;
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-graduation-cap"></i> Google Scholar
+          </a> &nbsp;/&nbsp;
+          <a href="https://github.com/SujithSaiSripadam/" target="_blank" rel="noopener noreferrer">
+             <i class="fab fa-github"></i> GitHub
+          </a> &nbsp;/&nbsp;
+          <a href="https://www.linkedin.com/in/sripadam-sujith-sai/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>&nbsp;/&nbsp;
+            <a href="posts/index.html" target="_blank">
+          <i class="fas fa-pen-nib"></i> Posts
+        </a>
         </p>
       </td>
-      <td style="padding:2.5%;width:100%;vertical-align:middle">
-       <div style="width: 200px; height: 200px;">
-        <img src="images/suji.jpeg"
-            style="width: 150%; height: 150%; object-fit: cover; border-radius: 50%;"
+      <td style="padding:0.2%;width:100%;vertical-align:middle">
+       <div class="profile-img-container" style="width: 300px; height: 300px;">
+        <img src="images/Sujith.png"
+            style="border-radius: 50%;"
             alt="profile photo"> 
       </div>
       </td>
     </tr>
-  </table>
 
-  <table style="width:100%;max-width:800px;margin:auto;border:0;border-spacing:0px;border-collapse:separate;">
-  <tr>
-    <td style="padding:20px;width:100%;vertical-align:middle">
+
+  
+    <td colspan="3" style="padding:20px;width:100%;vertical-align:middle">
       <h2>Achievements</h2>
       <ul>
         <li><strong>2024 Winner</strong>, <a href="https://www.sih.gov.in/">Smart India Hackathon</a> – National innovation competition focused on real-world problem-solving</li>
       </ul>
     </td>
   </tr>
-</table>
 
-  <table style="width:100%;max-width:800px;margin:auto;border:0;border-spacing:0px;border-collapse:separate;">
+
+  <table class="publications" id="publications" >
+    <!-- Section Title -->
     <tr>
-      <td style="padding:20px;width:100%;vertical-align:middle">
+      <td colspan="3" style="padding: 20px; vertical-align: middle;">
         <h2>Publications and Preprints</h2>
       </td>
     </tr>
-  </table>
 
-  <table style="width:100%;max-width:800px;margin:auto;border:0;border-spacing:0px;border-collapse:separate;">
+    <!-- Paper 1 -->
     <tr>
-      <td style="padding:2.5%;width:25%;vertical-align:middle; background-color: #fff9c4;">
-        <img src="images/qlstm.png" width="170">
+      <td style="padding: 2.5%; width: 25%; vertical-align: middle; background-color: #fff9c4;">
+        <img src="images/qlstm.png"  class="pub-image" width="190" alt="QLSTM Paper Image">
       </td>
-      <td style="padding:2.5%;width:75%;vertical-align:middle; background-color: #fff9c4;">
-        <a href="#" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #1772d0;">
-          <span class="papertitle">QGAPHnet : Quantum Genetic Algorithm Based Hybrid QLSTM Model for Soil Moisture Estimation.</span>
+      <td style="padding: 2.5%; width: 75%; vertical-align: middle; background-color: #fff9c4;">
+        <a href="#" class="papertitle" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">
+          QGAPHnet: Quantum Genetic Algorithm Based Hybrid QLSTM Model for Soil Moisture Estimation.
         </a>
         <br>
         <strong>S. Sai</strong> et al.,
         <br>IEEE IGARSS 2024<br>
-        <a href="#" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color:  #1772d0;">arXiv </a> 
-         | 
-         <a href="https://ieeexplore.ieee.org/abstract/document/10641651" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color:  #1772d0;"> IEEE Xplore </a> 
-        <br>
+        <a href="#" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">arXiv</a> |
+        <a href="https://ieeexplore.ieee.org/abstract/document/10641651" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">IEEE Xplore</a>
       </td>
     </tr>
 
+    <!-- Paper 2 -->
     <tr>
-      <td style="padding:2.5%;width:25%;vertical-align:middle; background-color: #fff9c4;">
-        <img src="images/hbo-devit.png" width="170">
+      <td style="padding: 2.5%; width: 25%; vertical-align: middle; background-color: #fff9c4;">
+        <img src="images/hbo-devit.png" class="pub-image" width="170" alt="HBO-DEViT Paper Image">
       </td>
-      <td style="padding:2.5%;width:75%;vertical-align:middle; background-color: #fff9c4;">
-        <a href="#" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #1772d0;">
-          <span class="papertitle">HBO-DEViT: Vision Transformer Based Attention-Guided Evolutionary Architecture for Ship-Iceberg Categorisation in Arctic Sar Images.</span>
+      <td style="padding: 2.5%; width: 75%; vertical-align: middle; background-color: #fff9c4;">
+        <a href="#" class="papertitle" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">
+          HBO-DEViT: Vision Transformer Based Attention-Guided Evolutionary Architecture for Ship-Iceberg Categorisation in Arctic SAR Images.
         </a>
         <br>
-        A. Sen,<strong>S. Sai</strong>, C. Mallick, S. Roy and U. Sen
+        A. Sen, <strong>S. Sai</strong>, C. Mallick, S. Roy, U. Sen
         <br>IEEE IGARSS 2024<br>
-        <a href="#" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color:  #1772d0;">arXiv </a> 
-        |
-         <a href="https://ieeexplore.ieee.org/abstract/document/10641319/authors#authors" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color:  #1772d0;"> IEEE Xplore </a> 
-        <br>
+        <a href="#" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">arXiv</a> |
+        <a href="https://ieeexplore.ieee.org/abstract/document/10641319/authors#authors" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">IEEE Xplore</a>
       </td>
     </tr>
 
+    <!-- Paper 3 -->
     <tr>
-      <td style="padding:2.5%;width:25%;vertical-align:middle; background-color: #fff9c4;">
-        <img src="images/hybrid_qlstm.png" width="170">
+      <td style="padding: 2.5%; width: 25%; vertical-align: middle; background-color: #fff9c4;">
+        <img src="images/hybrid_qlstm.png" class="pub-image" width="170" alt="Hybrid QLSTM Paper Image">
       </td>
-      <td style="padding:2.5%;width:75%;vertical-align:middle; background-color: #fff9c4;">
-        <a href="https://arxiv.org/abs/2501.10866" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #1772d0;">
-          <span class="papertitle">QGAPHEnsemble: Combining Hybrid QLSTM Network Ensemble via Adaptive Weighting for Short Term Weather Forecasting.</span>
+      <td style="padding: 2.5%; width: 75%; vertical-align: middle; background-color: #fff9c4;">
+        <a href="https://arxiv.org/abs/2501.10866" class="papertitle" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">
+          QGAPHEnsemble: Combining Hybrid QLSTM Network Ensemble via Adaptive Weighting for Short Term Weather Forecasting.
         </a>
         <br>
-        Sen, A., Sen, U., Paul, M., Padhy, A. P.,<strong>Sai, S.</strong>, Mallik, A., & Mallick, C.
-        <br>arXiv (2025).<br>
-        <a href="https://arxiv.org/abs/2501.10866" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color:  #1772d0;">arXiv</a> 
-        <br>
+        Sen, A., Sen, U., Paul, M., Padhy, A. P., <strong>Sai, S.</strong>, Mallik, A., & Mallick, C.
+        <br>arXiv (2025)<br>
+        <a href="https://arxiv.org/abs/2501.10866" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">arXiv</a>
       </td>
     </tr>
+
   </table>
+
+<!-- Projects Section -->
+  <table class="projects" id="projects">
+    <!-- Section Title -->
+    <tr>
+      <td colspan="3" style="padding: 20px; vertical-align: middle; background-color:white">
+        <h2>Projects</h2>
+      </td>
+    </tr>
+
+    <!-- Project 1 -->
+    <tr>
+      <td style="padding: 2.5%; width: 25%; vertical-align: middle; background-color: #e1f5fe;">
+        <img src="images/chessai.jpg" class="project-image" width="170" alt="Human-Robot Interaction Project">
+      </td>
+      <td style="padding: 2.5%; width: 75%; vertical-align: middle; background-color: #e1f5fe;">
+        <span class="project-title">ChesSAI : A Hybrid Reinforcement Learning-Based Self-Evolving Chess Engine</span>
+        <br>
+        A chess engine combining PPO and MCTS, trained via self-play, imitation learning, and dynamic ELO-based curriculum.
+        <br>
+        <a href="https://github.com/SujithSaiSripadam/ChesSAI" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">GitHub</a>
+      </td>
+    </tr>
+
+    <!-- Add other projects here... -->
+
+  </table>
+</div>
+
+
+
 </body>
+
+<script>
+  const toggle = document.getElementById('nav-toggle');
+  const links = document.getElementById('nav-links');
+
+  toggle.addEventListener('click', () => {
+    links.classList.toggle('active');
+  });
+</script>
 </html>

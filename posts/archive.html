@@ -1,0 +1,26 @@
+---
+layout: default
+title: Archive
+permalink: /posts/archive.html
+---
+
+<link rel="stylesheet" href="/blog_page.css" />
+
+<div class="container">
+  <h1>{{ page.title }}</h1>
+
+  {% assign posts_by_year = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+  {% for year in posts_by_year %}
+    <h2>{{ year.name }}</h2>
+    <ul class="post-list">
+      {% for post in year.items %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+          <small>{{ post.date | date: "%B %-d, %Y" }}</small>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+
+  <p class="back-link"><a href="/posts/">Back to Blog</a></p>
+</div>

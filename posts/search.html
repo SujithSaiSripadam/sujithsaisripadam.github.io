@@ -1,0 +1,42 @@
+---
+layout: default
+title: Search
+permalink: /posts/search.html
+---
+
+<link rel="stylesheet" href="/blog_page.css" />
+
+<div class="container">
+  <h1>{{ page.title }}</h1>
+
+  <div class="search-container">
+    <input type="text" id="search-posts" placeholder="Search posts..." />
+  </div>
+
+  <ul class="post-list" id="post-list">
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <small>{{ post.date | date: "%B %-d, %Y" }}</small>
+        <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="back-link"><a href="/posts/">Back to Blog</a></p>
+</div>
+
+<script>
+  const searchInput = document.getElementById('search-posts');
+  const postList = document.getElementById('post-list');
+  const posts = Array.from(postList.getElementsByTagName('li'));
+
+  searchInput.addEventListener('input', () => {
+    const query = searchInput.value.toLowerCase();
+    posts.forEach(post => {
+      const title = post.querySelector('a').textContent.toLowerCase();
+      const excerpt = post.querySelector('.post-excerpt').textContent.toLowerCase();
+      post.style.display = title.includes(query) || excerpt.includes(query) ? '' : 'none';
+    });
+  });
+</script>

@@ -1,3 +1,38 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="/style_blog.css" />
+
+  <!-- MathJax Configuration (MUST come before loading script) -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+
+  <!-- Load MathJax -->
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <article>
+    {{ content }}
+  </article>
+
+  <footer>
+<p>
+  <a href="/" style="display: inline-block; padding: 10px 20px; background-color: #54a7ff; color: white; text-decoration: none; border-radius: 5px;">
+     Back to Posts
+  </a>
+</p>
+  </footer>
+</body>
+</html>

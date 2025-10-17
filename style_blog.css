@@ -1,0 +1,109 @@
+/* style_blog.css */
+
+/* Center article content with 80% width */
+body {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #222;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  width: 55%;
+  margin: 0 auto; /* center horizontally */
+  padding: 2em 0;
+}
+
+/* Optional: Style headers */
+h1, h2, h3 {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #333;
+}
+
+/* Optional: Improve math readability */
+mjx-container {
+  font-size: 1.1em;
+}
+
+/* Optional: Images max width */
+article img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5em auto;
+}
+
+/* Make Markdown tables look like real tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2em 0;
+  font-size: 16px;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 0.6em 1em;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Container */
+.toc-container {
+  border-left: 4px solid #007acc;
+  padding: 16px 24px;
+  background-color: #f7fbff;
+  margin: 24px 0;
+  border-radius: 6px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Summary Toggle */
+.toc-summary {
+  font-size: 20px;
+  font-weight: 600;
+  color: #005a9c;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+/* List Styling */
+.toc-list {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 15px;
+  color: #333;
+}
+
+.toc-list li {
+  margin-bottom: 6px;
+}
+
+.toc-list a {
+  color: #0077cc;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.toc-list a:hover {
+  text-decoration: underline;
+  color: #004e8c;
+}
+
+/* Nested UL styling */
+.toc-list ul {
+  padding-left: 18px;
+  margin-top: 4px;
+}
