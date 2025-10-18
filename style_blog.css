@@ -107,3 +107,11 @@ table tr:nth-child(even) {
   padding-left: 18px;
   margin-top: 4px;
 }
+
+blockquote {
+  background-color: #f0f0f0;
+  border-left: 4px solid #ccc;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 4px;
+}
