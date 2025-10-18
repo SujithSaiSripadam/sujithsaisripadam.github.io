@@ -92,14 +92,14 @@ table tr:nth-child(even) {
 }
 
 .toc-list a {
-  color: #0077cc;
+  color: #50aff3;
   text-decoration: none;
   transition: all 0.2s ease;
 }
 
 .toc-list a:hover {
   text-decoration: underline;
-  color: #004e8c;
+  color: #4fabf7;
 }
 
 /* Nested UL styling */
@@ -116,75 +116,42 @@ blockquote {
   border-radius: 4px;
 }
 
-/* Navbar container */
 .navbar {
-  background-color: #3eadf7; /* nice blue */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  padding: 10px 0;
-  position: sticky; /* sticks on scroll */
-  top: 0;
-  z-index: 1000;
+  background-color: #5bb1eb;
+  padding: 1rem 2rem;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Inner container to limit width and center */
-.navbar .container {
-  max-width: 1100px;
+.navbar-container {
+  max-width: 960px;
   margin: 0 auto;
-  padding: 0 20px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
-/* Brand/Logo text */
-.navbar .brand {
-  font-weight: 700;
+.brand {
   font-size: 1.5rem;
-  color: #fff;
+  font-weight: bold;
+  color: white;
   text-decoration: none;
-  letter-spacing: 1px;
-  transition: color 0.3s ease;
 }
 
-.navbar .brand:hover {
-  color: #ffd54f; /* golden highlight */
-}
-
-/* Navigation links */
-.navbar .nav-links {
+.nav-links {
   list-style: none;
-  display: flex;
-  gap: 25px;
   margin: 0;
   padding: 0;
+  display: flex;
+  gap: 2rem;
 }
 
-.navbar .nav-links li a {
-  color: #e0e0e0;
-  font-weight: 600;
+.nav-links li a {
+  color: white;
   text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease;
+  font-weight: 500;
 }
 
-.navbar .nav-links li a:hover {
-  color: #ffd54f; /* same golden highlight */
+.nav-links li a:hover {
   text-decoration: underline;
-}
-
-/* Responsive: stack menu vertically on narrow screens */
-@media (max-width: 600px) {
-  .navbar .container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .navbar .nav-links {
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    margin-top: 10px;
-  }
-  .navbar .nav-links li a {
-    font-size: 1.1rem;
-  }
 }
